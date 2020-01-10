@@ -1,4 +1,6 @@
 /* MAIN CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Gelasio:400,500,600,700&display=swap');
   
 body {
   margin: 0;
@@ -13,8 +15,11 @@ body {
 .App {
   max-width: 400px;
   margin: 30px auto;
+  font-family: 'Gelasio', serif;
   text-align: center;
 }
+
+/* NAV */
 nav{
   padding: 5px;
 }
