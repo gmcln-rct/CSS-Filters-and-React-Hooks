@@ -30,6 +30,8 @@ nav ul li {
   display: inline-block;
   margin: 0 10px;
 }
+
+/* BOOK PAGE */
 .book-list {
   padding: 20px;
   margin-bottom: 20px;
@@ -44,3 +46,13 @@ nav ul li {
   border-radius: 10px;
 }
 
+.toggle-button {
+  width: 50%;
+  height: 2rem;
+
+  border-radius: 5px;
+  
+  font-size: 1rem;
+  font-weight: 600;
+  
+}
