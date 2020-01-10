@@ -5,7 +5,9 @@ class ThemeToggle extends Component {
     static contextType = ThemeContext;
     render() {
         const { toggleTheme } = this.context;
-        return (<button className='toggle-button' onClick={toggleTheme}>Toggle Theme</button>);
+        const { isLightTheme, light, dark } = this.context;
+        const theme = isLightTheme ? light : dark;
+        return (<button className='toggle-button' style={{ background: theme.ui, color: theme.syntax}} onClick={toggleTheme}>Toggle Theme</button>);
     }
 }
 
