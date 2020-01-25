@@ -2,17 +2,18 @@ import React, { useContext, useState } from "react";
 import { MovieContext } from "../contexts/MovieContext";
 
 const NewMovieForm = () => {
-  const { addMovie } = useContext(MovieContext);
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
+    const { addMovie } = useContext(MovieContext);
+    const [title, setTitle] = useState("");
+    const [director, setDirector] = useState("");
+    const [year, setYear] = useState("");
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    //console.log(title, author);
-    addMovie(title, author);
-    setTitle("");
-    setAuthor("");
-  };
+    const handleSubmit = e => {
+        e.preventDefault();
+        //console.log(title, director);
+        addMovie(title, director, year);
+        setTitle("");
+        setDirector("");
+    };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -24,11 +25,17 @@ const NewMovieForm = () => {
       />
       <input
         type="text"
-        placeholder="author name"
-        value={author}
-        onChange={e => setAuthor(e.target.value)}
+        placeholder="director name"
+        value={director}
+        onChange={e => setDirector(e.target.value)}
       />
-      <input type="submit" value="add Movie" />
+      <input
+        type="text"
+        placeholder="year"
+        value={year}
+        onChange={e => setDirector(e.target.value)}
+      />
+      <input type="submit" value="Add Movie" />
     </form>
   );
 };
