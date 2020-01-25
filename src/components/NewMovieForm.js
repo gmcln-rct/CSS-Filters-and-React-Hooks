@@ -9,7 +9,6 @@ const NewMovieForm = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        //console.log(title, director);
         addMovie(title, director, year);
         setTitle("");
         setDirector("");
@@ -33,9 +32,11 @@ const NewMovieForm = () => {
         type="text"
         placeholder="year"
         value={year}
-        onChange={e => setDirector(e.target.value)}
+        onChange={e => setYear(e.target.value)}
       />
       <input type="submit" value="Add Movie" />
     </form>
   );
 };
+
+export default NewMovieForm;
