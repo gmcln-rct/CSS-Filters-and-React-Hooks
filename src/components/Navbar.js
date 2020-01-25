@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <h1>Movies To Watch</h1>
-      <p>Currently you have {Movies.length} Movies to watch. Chop-chop.</p>
+      <p>You have {Movies.length} Movies to watch. <br /> Chop-chop.</p>
     </div>
   );
 }

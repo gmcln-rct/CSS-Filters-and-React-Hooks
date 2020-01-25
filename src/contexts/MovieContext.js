@@ -5,11 +5,12 @@ export const MovieContext = createContext();
 
 const MovieContextProvider = (props) => {
   const [Movies, setMovies] = useState([
-    {title: 'name of the wind', director: 'patrick rothfuss', id: 1},
-    {title: 'the final empire', director: 'brandon sanderson', id: 2},
+    { title: "Citizen Kane", director: "Orson Welles", year: "1941", id: 1 },
+    { title: "The Waterboy", director: "Frank Coraci", year: "1998", id: 2 },
+    { title: "Remains of the Day", director: "Frank Coraci", year: "1989", id: 3 }
   ]);
-  const addMovie = (title, director) => {
-    setMovies([...Movies, {title, director, id: uuid()}]);
+  const addMovie = (title, director, year) => {
+    setMovies([...Movies, {title, director, year, id: uuid()}]);
   };
   const removeMovie = (id) => {
     setMovies(Movies.filter(Movie => Movie.id !== id));
