@@ -1,22 +1,16 @@
 import React from 'react';
-
-// COMPONENTS
-import BookList from './components/BookList';
 import Navbar from './components/Navbar';
-import ThemeToggle from './components/ThemeToggle';
-
-// CONTEXT
-import ThemeContextProvider from './contexts/ThemeContext';
+import MovieContextProvider from './contexts/MovieContext';
+import MovieList from './components/MovieList';
 
 
 function App() {
   return (
-    <div className="App">
-      <ThemeContextProvider>
+    <div className="main-app">
+      <MovieContextProvider>
         <Navbar />
-        <BookList />
-        <ThemeToggle />
-      </ThemeContextProvider>
+        <MovieList />
+      </MovieContextProvider>
     </div>
   );
 }

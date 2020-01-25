@@ -1,26 +1,14 @@
-import React, { Component } from 'react';
-import { ThemeContext } from '../contexts/ThemeContext';
+import React, { useContext } from 'react';
+import { MovieContext } from '../contexts/MovieContext';
 
-class Navbar extends Component {
-    // static contextType = ThemeContext;
-    render() {
-        return (
-            <ThemeContext.Consumer>{(context) => {
-                const { isLightTheme, light, dark } = context;
-                const theme = isLightTheme ? light : dark;
-                return (
-                    <nav style={{ background: theme.ui, color: theme.syntax }}>
-                        <h1>Book List</h1>
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Contact</li>
-                        </ul>
-                    </nav>
-                )
-            }}</ThemeContext.Consumer>
-        );
-    }
+const Navbar = () => {
+  const { Movies } = useContext(MovieContext);
+  return (
+    <div className="navbar">
+      <h1>Movies To Watch</h1>
+      <p>Currently you have {Movies.length} Movies to watch. Chop-chop.</p>
+    </div>
+  );
 }
-
+ 
 export default Navbar;
