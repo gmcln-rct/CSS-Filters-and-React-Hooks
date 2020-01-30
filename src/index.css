@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #a8c0e4;
+  background: #d3d7dd;
 }
 
 .main-app{
@@ -18,7 +18,6 @@ body {
   font-family: 'Heebo', sans-serif;
   
   color: #5c6a7d;
-  background: #a8c0e4;
 }
 
 .navbar{
@@ -102,7 +101,7 @@ form{
   font-family: 'Heebo', sans-serif;
   font-size: 1rem;
 
-  background: rgb(206, 206, 206);
+  background: #999;
 }
 
 input {
