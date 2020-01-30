@@ -7,12 +7,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #d3d7dd;
+  background: #f1f4f8;
 }
 
 .main-app{
   width: 90%;
-  max-width: 700px;
+  max-width: 1100px;
   margin: 2rem auto;
   
   font-family: 'Heebo', sans-serif;
@@ -34,7 +34,7 @@ body {
 .navbar h1{
   margin-bottom: 0;
   font-size: 3rem;
-  color: #e0cfb5;
+  color: #e9c58f;
 }
 .navbar p{
   margin-top: 0;
@@ -42,14 +42,19 @@ body {
 
 /* Movie List */
 .Movie-list{
+  width: 90%;
   margin: 2rem;
 }
 .Movie-list ul{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
 }
 .Movie-list li{
-  margin: 1rem 2rem;
+  width: 10rem;
+  margin: 1rem 1rem;
   padding: 1rem;
 
   color: #fff;
@@ -93,7 +98,9 @@ body {
 /* Form */
 
 form{
-    margin: 2rem;
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 2rem;
 
   border-radius: 10px;
