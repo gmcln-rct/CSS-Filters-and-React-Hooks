@@ -28,13 +28,13 @@ body {
   text-align: center;
 
   color: white;
-  background: #5c6a7d;
+  background: #064792;
 
 }
 .navbar h1{
   margin-bottom: 0;
   font-size: 3rem;
-  color: #e9c58f;
+  color: #ff8e0d;
 }
 .navbar p{
   margin-top: 0;
@@ -42,8 +42,8 @@ body {
 
 /* Movie List */
 .Movie-list{
-  width: 90%;
-  margin: 2rem;
+  width: 100%;
+  margin: 0 10%;
 }
 .Movie-list ul{
   display: flex;
@@ -53,13 +53,14 @@ body {
   list-style-type: none;
 }
 .Movie-list li{
-  width: 10rem;
+  width: 15rem;
   margin: 1rem 1rem;
   padding: 1rem;
 
   color: #fff;
-  background: #5c6a7d;
+  background: #0d7eff;
   border-radius: 10px;
+
   cursor: pointer;
 }
 
@@ -71,10 +72,14 @@ body {
 }
 
 .Movie-list .title{
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.2em;
 }
 
+.movie-title {
+  font-weight: 700;
+  color: #fff;
+}
 .Movie-list .director{
   font-size: 0.9em;
   color: #ddd;
