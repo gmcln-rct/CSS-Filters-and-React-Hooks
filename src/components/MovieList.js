@@ -16,7 +16,7 @@ const MovieList = () => {
       </ul>
     </div>
   ) : (
-    <div className="empty">You have no movies to watch. Try reading?</div>
+    <div className="empty">You have no movies to watch. Perhaps try reading?</div>
   );
 }
 
