@@ -51,8 +51,8 @@ body {
   text-align: center;
 }
 
-/* Movie List */
-.Movie-list{
+/* movie List */
+.movie-list{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -62,7 +62,7 @@ body {
 
 }
 
-.Movie-list ul{
+.movie-list ul{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -70,7 +70,7 @@ body {
   list-style-type: none;
 }
 
-.Movie-list li{
+.movie-list li{
   width: 15rem;
   margin: 1rem 1rem;
   padding: 1rem;
@@ -82,14 +82,14 @@ body {
   cursor: pointer;
 }
 
-.Movie-list li:hover{
+.movie-list li:hover{
   opacity: 0.7;
   background: #66647c;
   text-decoration: line-through;
   transition: 0.4s;
 }
 
-.Movie-list .title{
+.movie-list .title{
   font-weight: 400;
   font-size: 1.2em;
 }
@@ -98,17 +98,17 @@ body {
   font-weight: 700;
   color: rgb(232, 255, 102);
 }
-.Movie-list .director{
+.movie-list .director{
   font-size: 0.9em;
   color: #ddd;
 }
 
-.Movie-list .year{
+.movie-list .year{
   font-size: 0.9em;
   color: #ddd;
 }
 
-.Movie-list > ul > li:hover {
+.movie-list > ul > li:hover {
   color: #e2d0b6;
 }
 

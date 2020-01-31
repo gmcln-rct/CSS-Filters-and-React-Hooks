@@ -1,10 +1,10 @@
 import React, { createContext, useState } from 'react';
 import uuid from 'uuid/v1';
 
-export const MovieContext = createContext();
+export const movieContext = createContext();
 
-const MovieContextProvider = (props) => {
-  const [Movies, setMovies] = useState([
+const movieContextProvider = (props) => {
+  const [movies, setmovies] = useState([
     { title: "Citizen Kane", director: "Orson Welles", year: "1941", id: 1 },
     { title: "The Waterboy", director: "Frank Coraci", year: "1998", id: 2 },
     { title: "Remains of the Day", director: "Frank Coraci", year: "1989", id: 3 },
@@ -12,18 +12,18 @@ const MovieContextProvider = (props) => {
     { title: "Harakiri", director: "Masaki Kobayashi", year: "1962", id: 5 }
   ]);
 
-  const addMovie = (title, director, year) => {
-    setMovies([...Movies, {title, director, year, id: uuid()}]);
+  const addmovie = (title, director, year) => {
+    setmovies([...movies, {title, director, year, id: uuid()}]);
   };
-  const removeMovie = (id) => {
-    setMovies(Movies.filter(Movie => Movie.id !== id));
+  const removemovie = (id) => {
+    setmovies(movies.filter(movie => movie.id !== id));
   }
 
   return (
-    <MovieContext.Provider value={{ Movies, addMovie, removeMovie }}>
+    <movieContext.Provider value={{ movies, addmovie, removemovie }}>
       {props.children}
-    </MovieContext.Provider>
+    </movieContext.Provider>
   );
 }
  
-export default MovieContextProvider;
+export default movieContextProvider;

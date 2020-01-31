@@ -1,15 +1,15 @@
 import React, { useContext, useState } from "react";
-import { MovieContext } from "../contexts/MovieContext";
+import { movieContext } from "../contexts/movieContext";
 
-const NewMovieForm = () => {
-    const { addMovie } = useContext(MovieContext);
+const NewmovieForm = () => {
+    const { addmovie } = useContext(movieContext);
     const [title, setTitle] = useState("");
     const [director, setDirector] = useState("");
     const [year, setYear] = useState("");
 
     const handleSubmit = e => {
         e.preventDefault();
-        addMovie(title, director, year);
+        addmovie(title, director, year);
         setTitle("");
         setDirector("");
         setYear("");
@@ -19,7 +19,7 @@ const NewMovieForm = () => {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Movie Title"
+        placeholder="movie Title"
         value={title}
         onChange={e => setTitle(e.target.value)}
       />
@@ -35,9 +35,9 @@ const NewMovieForm = () => {
         value={year}
         onChange={e => setYear(e.target.value)}
       />
-      <input type="submit" value="Add Movie" />
+      <input type="submit" value="Add movie" />
     </form>
   );
 };
 
-export default NewMovieForm;
+export default NewmovieForm;

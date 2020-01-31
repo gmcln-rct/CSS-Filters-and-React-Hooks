@@ -1,18 +1,20 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import MovieContextProvider from './contexts/MovieContext';
-import MovieList from './components/MovieList';
-import NewMovieForm from './components/NewMovieForm';
+import movieContextProvider from './contexts/movieContext';
+import movieList from './components/movieList';
+import NewmovieForm from './components/NewmovieForm';
 
 
 function App() {
   return (
     <div className="main-app">
-      <MovieContextProvider>
-        <Navbar />
-        <MovieList />
-        <NewMovieForm />
-      </MovieContextProvider>
+      <ThemeContextProvider>
+        <movieContextProvider>
+          <Navbar />
+          <movieList />
+          <NewmovieForm />
+        </movieContextProvider>
+      </ThemeContextProvider>
     </div>
   );
 }
