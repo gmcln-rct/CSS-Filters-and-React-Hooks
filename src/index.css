@@ -95,7 +95,7 @@ body {
 
 .movie-title {
   font-weight: 700;
-  color: #C0DE14;
+  color: rgb(232, 255, 102);
 }
 .Movie-list .director{
   font-size: 0.9em;
@@ -123,7 +123,7 @@ form{
   width: 50%;
   max-width: 500px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 
   border-radius: 10px;
 
@@ -150,16 +150,20 @@ input[type='text']{
 }
 input[type='submit']{
     display: block;
-    margin: 10px auto;
+    margin: 0.5rem auto;
     padding: 6px 20px;
+
     font-size: 1rem;
     font-weight: 600;
-    color: #333;
-    background: #eee;
+
+    border-radius: 5px;
+    color: #fff;
+    background: #1F78DE;
 
 }
 
 input[type='submit']:hover {
-  color: #fffff0;
-      background: rgb(105, 104, 104);
+  color: #1F78DE;
+  background: lightgrey;
+  transition: 0.4s;
 }
