@@ -26,6 +26,10 @@ body {
   color: #5c6a7d;
 }
 
+.themed-app {
+  filter: grayscale(100%);
+}
+
 .navbar{
   width: 100%;
   

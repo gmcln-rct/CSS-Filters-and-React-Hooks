@@ -8,11 +8,14 @@ import NewMovieForm from './components/NewMovieForm';
 function App() {
   return (
     <div className="main-app">
-      <MovieContextProvider>
-        <Navbar />
-        <MovieList />
-        <NewMovieForm />
-      </MovieContextProvider>
+      <div className='themed-app'>
+        <MovieContextProvider>
+          <Navbar />
+          <MovieList />
+          <NewMovieForm />
+        </MovieContextProvider>
+      </div>
+
     </div>
   );
 }
