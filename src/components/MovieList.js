@@ -6,6 +6,7 @@ const MovieList = () => {
   const { Movies } = useContext(MovieContext);
   return Movies.length ? (
     <div className="Movie-list">
+      <p>You have {Movies.length} movies to watch. <br /> Chop-chop.</p>
       <ul>
         {Movies.map(Movie => {
           return ( <MovieDetails Movie={Movie} key={Movie.id} /> );
