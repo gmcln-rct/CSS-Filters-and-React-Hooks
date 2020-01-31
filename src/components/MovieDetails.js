@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { movieContext } from '../contexts/movieContext';
+import { MovieContext } from '../contexts/MovieContext';
 
-const movieDetails = ({ movie }) => {
-  const { removemovie } = useContext(movieContext);
+const MovieDetails = ({ movie }) => {
+  const { removeMovie } = useContext(MovieContext);
   return (
-    <li onClick={() => removemovie(movie.id)}>
+    <li onClick={() => removeMovie(movie.id)}>
       <div className="title"><span className='movie-title'>{movie.title}</span> </div>
       <div className="director">Director: {movie.director}</div>
       <div className="year">Year: {movie.year}</div>
@@ -12,6 +12,4 @@ const movieDetails = ({ movie }) => {
   );
 }
 
-
-
-export default movieDetails;
+export default MovieDetails;

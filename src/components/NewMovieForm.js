@@ -1,15 +1,15 @@
 import React, { useContext, useState } from "react";
-import { movieContext } from "../contexts/movieContext";
+import { MovieContext } from "../contexts/MovieContext";
 
-const NewmovieForm = () => {
-    const { addmovie } = useContext(movieContext);
+const NewMovieForm = () => {
+    const { addMovie } = useContext(MovieContext);
     const [title, setTitle] = useState("");
     const [director, setDirector] = useState("");
     const [year, setYear] = useState("");
 
     const handleSubmit = e => {
         e.preventDefault();
-        addmovie(title, director, year);
+        addMovie(title, director, year);
         setTitle("");
         setDirector("");
         setYear("");
@@ -40,4 +40,4 @@ const NewmovieForm = () => {
   );
 };
 
-export default NewmovieForm;
+export default NewMovieForm;

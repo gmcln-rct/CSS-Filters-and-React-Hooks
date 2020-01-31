@@ -1,17 +1,16 @@
 import React, { useContext } from 'react';
-import movieDetails from './movieDetails';
-import { movieContext } from '../contexts/movieContext';
+import MovieDetails from './MovieDetails';
+import { MovieContext } from '../contexts/MovieContext';
 
-const movieList = () => {
-  const { movies } = useContext(movieContext);
-  let movieVar = movies.length === 1 ? 'movie' : 'movies';
-  return movies.length ? (
+const MovieList = () => {
+  const { Movies } = useContext(MovieContext);
+  let movieVar = Movies.length === 1 ? 'movie' : 'movies';
+  return Movies.length ? (
     <div className="movie-list">
-      <div className="subheader"><p>You have {movies.length} {movieVar} to watch. <br /> Chop-chop!</p></div>
-      
+      <div className="subheader"><p>You have {Movies.length} {movieVar} to watch. <br /> Chop-chop!</p></div>
       <ul>
-        {movies.map(movie => {
-          return ( <movieDetails movie={movie} key={movie.id} /> );
+        {Movies.map(movie => {
+          return ( <MovieDetails movie={movie} key={movie.id} /> );
         })}
       </ul>
     </div>
@@ -20,4 +19,4 @@ const movieList = () => {
   );
 }
 
-export default movieList;
+export default MovieList;

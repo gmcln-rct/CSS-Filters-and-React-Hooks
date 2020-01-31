@@ -1,11 +1,9 @@
-import React, { useContext } from 'react';
-import { movieContext } from '../contexts/movieContext';
+import React from 'react';
 
 const Navbar = () => {
-  const { movies } = useContext(movieContext);
   return (
     <div className="navbar">
-      <h1>movies To Watch</h1>
+      <h1>Movies To Watch</h1>
     </div>
   );
 }
