@@ -12,6 +12,7 @@ const NewMovieForm = () => {
         addMovie(title, director, year);
         setTitle("");
         setDirector("");
+        setYear("");
     };
 
   return (
