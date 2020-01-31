@@ -4,9 +4,11 @@ import { MovieContext } from '../contexts/MovieContext';
 
 const MovieList = () => {
   const { Movies } = useContext(MovieContext);
+  let movieVar = Movies.length === 1 ? 'movie' : 'movies';
   return Movies.length ? (
     <div className="Movie-list">
-      <p>You have {Movies.length} movies to watch. <br /> Chop-chop.</p>
+      <div className="subheader"><p>You have {Movies.length} {movieVar} to watch. <br /> Chop-chop!</p></div>
+      
       <ul>
         {Movies.map(Movie => {
           return ( <MovieDetails Movie={Movie} key={Movie.id} /> );
