@@ -1,25 +1,26 @@
-import React, { Component, createContext, useState } from "react";
+import React, { Component, createContext } from 'react';
 
 export const ThemeContext = createContext();
 
+class ThemeContextProvider extends Component {
+  state = {
+    filterTheme: "none",
+    none: "none",
+    blur: "blur(10px)",
+    grayscale: "grayscale(100%)"
+  }
 
-const ThemeContextProvider = (props) => {
-  const [theme, setTheme] = useState([
-    { name: "none", filter: "none", id: 1 },
-    { name: "blur", filter: "blur(10px)", id: 2 },
-    { name: "blur", filter: "blur(10px)", id: 3 }
+  toggleTheme = () => {
+    this.setState({ filterTheme: this.filterTheme });
+  }
 
-  ]);
-
-
-
-
-  return (
-    <ThemeContext.Provider value={{ FilterThemes, setFilterTheme } }>
-      {props.children}
-    </ThemeContext.Provider>
-  );
-
+  render() {
+    return (
+      <ThemeContext.Provider value={{ ...this.state, toggleTheme: this.toggleTheme }}>
+        {this.props.children}
+      </ThemeContext.Provider>
+    );
+  }
 }
 
 export default ThemeContextProvider;
