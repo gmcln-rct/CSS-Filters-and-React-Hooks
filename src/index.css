@@ -25,12 +25,7 @@ body {
   font-family: 'Heebo', sans-serif;
   
   color: #5c6a7d;
-  background-color: darkblue;
-  background: url(./images/projector-bg2.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 
 .themed-app {
@@ -70,6 +65,7 @@ body {
 
   width: 80%;
   margin: 0 10% 1%;
+  
 
 }
 
