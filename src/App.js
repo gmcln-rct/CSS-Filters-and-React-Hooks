@@ -9,22 +9,20 @@ import MovieContextProvider from './contexts/MovieContext';
 import ThemeContextProvider from './contexts/ThemeContext';
 
 
-
-
 function App() {
 
 
   return (
-      <ThemeContextProvider>
-        <div className="main-app">
+    <div className="main-app">
+        <ThemeContextProvider>
             <MovieContextProvider>
               <Navbar />
               <MovieList />
               <NewMovieForm />
             </MovieContextProvider>
           < ThemeSelect />
+          </ThemeContextProvider>
         </div>
-      </ThemeContextProvider>
   );
 }
 

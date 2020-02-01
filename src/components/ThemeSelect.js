@@ -10,8 +10,8 @@ const ThemeSelect = () => {
 
   function handleChange(e) {
     chooseTheme(e.target.value);
-    const { options } = e.target;
-    console.log(options);
+    const { options, value } = e.target;
+    console.log(options[value].innerHTML);
   };
 
   function handleSubmit(e) {
@@ -26,22 +26,22 @@ const ThemeSelect = () => {
           <label>
             Choose from dropdown to explore how different CSS filters affect
             page elements.
-            <select value={filterTheme} onChange={handleChange}>
-              <option>Choose Filter</option>
-              <option value="blur(10px)">Blur</option>
-              <option value="brightness(3)">Brightness</option>
-              <option value="contrast(3)">Contrast</option>
-              <option value="drop-shadow(16px 16px 10px rgba(0,0,0,0.9)">
-                Drop Shadow
-              </option>
-              <option value="grayscale(100%)">GrayScale</option>
-              <option value="invert(100%)">Invert</option>
-              <option value="sepia(100%)">Sepia</option>
-              <option value="saturate(0%)">Saturate/Desaturate</option>
-              <option value="none">Clear Filter</option>
-            </select>
           </label>
-            <div>Current Filter: {ThemeContext.filterTheme}</div>
+          <select value={filterTheme} onChange={handleChange}>
+            <option value="none">Choose Filter</option>
+            <option value="blur(10px)">Blur</option>
+            <option value="brightness(3)">Brightness</option>
+            <option value="contrast(3)">Contrast</option>
+            <option value="drop-shadow(16px 16px 10px rgba(0,0,0,0.9)">
+              Drop Shadow
+            </option>
+            <option value="grayscale(100%)">GrayScale</option>
+            <option value="invert(100%)">Invert</option>
+            <option value="sepia(100%)">Sepia</option>
+            <option value="saturate(0%)">Saturate/Desaturate</option>
+            <option value="none">Clear Filter</option>
+          </select>
+            <div>Current Filter: {filterTheme}</div>
           {/* <input type="submit" value="Choose Filter" /> */}
         </form>
       </div>
