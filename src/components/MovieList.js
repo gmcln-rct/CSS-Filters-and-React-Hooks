@@ -6,7 +6,7 @@ import { ThemeContext } from "../contexts/ThemeContext";
 
 const MovieList = () => {
   const { Movies } = useContext(MovieContext);
-  const { filterTheme } = useContext(ThemeContext);
+  const { filterTheme, blur, grayscale } = useContext(ThemeContext);
   let movieVar = Movies.length === 1 ? 'movie' : 'movies';
   
   return Movies.length ? (

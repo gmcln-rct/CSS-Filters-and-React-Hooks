@@ -10,13 +10,13 @@ class ThemeContextProvider extends Component {
     grayscale: "grayscale(100%)"
   }
 
-  toggleTheme = () => {
-    this.setState({ filterTheme: this.filterTheme });
+  chooseTheme = (value) => {
+    this.setState({ filterTheme: value});
   }
 
   render() {
     return (
-      <ThemeContext.Provider value={{ ...this.state, toggleTheme: this.toggleTheme }}>
+      <ThemeContext.Provider value={{ ...this.state, chooseTheme: this.chooseTheme }}>
         {this.props.children}
       </ThemeContext.Provider>
     );
