@@ -1,8 +1,12 @@
 import React, { useContext, useState } from "react";
+
 import { MovieContext } from "../contexts/MovieContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const NewMovieForm = () => {
     const { addMovie } = useContext(MovieContext);
+    const { filterTheme } = useContext(ThemeContext);
+
     const [title, setTitle] = useState("");
     const [director, setDirector] = useState("");
     const [year, setYear] = useState("");
@@ -16,7 +20,7 @@ const NewMovieForm = () => {
     };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{ filter: filterTheme }}>
       <input
         type="text"
         placeholder="movie Title"

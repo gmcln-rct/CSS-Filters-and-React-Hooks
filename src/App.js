@@ -1,21 +1,24 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import MovieContextProvider from './contexts/MovieContext';
+import ThemeSelect from './components/ThemeSelect';
+
 import MovieList from './components/MovieList';
 import NewMovieForm from './components/NewMovieForm';
 
+import MovieContextProvider from './contexts/MovieContext';
+import ThemeContextProvider from './contexts/ThemeContext';
 
 function App() {
   return (
     <div className="main-app">
-      <div className='themed-app'>
+      <ThemeContextProvider>
         <MovieContextProvider>
           <Navbar />
           <MovieList />
           <NewMovieForm />
         </MovieContextProvider>
-      </div>
-
+       < ThemeSelect />
+      </ThemeContextProvider>
     </div>
   );
 }
