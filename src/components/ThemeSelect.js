@@ -22,9 +22,11 @@ const ThemeSelect = () => {
         <label>
           Pick your favorite flavor:
           <select value={filterTheme} onChange={handleChange}>
-            <option value="none">No Filter</option>
-            <option value="blur(10px)">blur</option>
-            <option value="grayscale">GrayScale</option>
+              <option value="none">No Filter</option>
+              <option value="blur(10px)">Blur</option>
+              <option value="grayscale(100%)">GrayScale</option>
+            <option value="sepia(1))">Sepia</option>
+              <option value="grayscale(100%)">GrayScale</option>
           </select>
         </label>
         <input type="submit" value="Choose Filter" />
