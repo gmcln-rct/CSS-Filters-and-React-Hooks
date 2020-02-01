@@ -20,6 +20,7 @@ const ThemeSelect = () => {
     return (
       <div className="theme-form">
         <form onSubmit={handleSubmit}>
+          <h1>CSS Filters</h1>
           <label>
             Pick your favorite flavor:
             <select value={filterTheme} onChange={handleChange}>

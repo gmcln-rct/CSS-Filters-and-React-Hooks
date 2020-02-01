@@ -28,8 +28,8 @@ body {
 
 }
 
-.themed-app {
-  filter: grayscale(100%);
+.theme-form form {
+  background: red;
 }
 
 .navbar{
@@ -126,23 +126,27 @@ body {
 }
 
 /* Form */
+form.movie-form {
+
+  font-size: 0.8rem;
+  background: #999;
+}
 
 form{
   width: 40%;
   max-width: 400px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 
   border-radius: 10px;
 
   font-family: 'Heebo', sans-serif;
-  font-size: 1rem;
 
-  background: #999;
+
 }
 
 input {
-    font-size: 1rem;
+
     color: #fff;
     background: #2b313a;
     border: 0;

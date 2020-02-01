@@ -11,7 +11,7 @@ const MovieList = () => {
   
   return Movies.length ? (
     <div className="movie-list" style={{ filter: filterTheme }}>
-      <div className="subheader"><p>You have {Movies.length} {movieVar} to watch. <br /> Chop-chop!</p></div>
+      <div className="subheader"><p>You have {Movies.length} {movieVar} to watch. Chop-chop!</p></div>
       <ul>
         {Movies.map(movie => {
           return ( <MovieDetails movie={movie} key={movie.id} /> );

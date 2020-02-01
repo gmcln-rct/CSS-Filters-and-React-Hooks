@@ -20,10 +20,10 @@ const NewMovieForm = () => {
     };
 
   return (
-    <form onSubmit={handleSubmit} style={{ filter: filterTheme }}>
+    <form className='movie-form' onSubmit={handleSubmit} style={{ filter: filterTheme }}>
       <input
         type="text"
-        placeholder="movie Title"
+        placeholder="Movie Title"
         value={title}
         onChange={e => setTitle(e.target.value)}
       />
