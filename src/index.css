@@ -21,20 +21,10 @@ body {
   width: 100%;
   margin: 0 auto;
 
-  
   font-family: 'Heebo', sans-serif;
   
   color: #5c6a7d;
 
-}
-.theme-form {
-    display: flex;
-  justify-content: center;
-}
-
-.theme-form form {
-  margin: 2rem 0;
-  background: red;
 }
 
 .navbar{
@@ -130,16 +120,16 @@ body {
   text-align: center;
 }
 
-/* Form */
+/* Movie Form */
 form.movie-form {
-
+  width: 40%;
+  max-width: 400px;
   font-size: 0.8rem;
   background: #999;
 }
 
 form{
-  width: 40%;
-  max-width: 400px;
+
   margin: 0 auto;
   padding: 0.5rem 1rem;
 
@@ -178,4 +168,30 @@ input[type='submit']:hover {
   color: #1F78DE;
   background: lightgrey;
   transition: 0.4s;
+}
+
+/* Theme Form */
+.theme-form {
+    display: flex;
+    justify-content: center;
+
+    color: white;
+}
+
+.theme-form form {
+      width: 50%;
+  margin: 2rem 0;
+  background: #9E2116;
+}
+
+.theme-form h1 {
+  text-align: center;
+}
+.theme-form label {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+select {
+  text-align: center;
 }
