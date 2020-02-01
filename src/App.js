@@ -10,16 +10,16 @@ import ThemeContextProvider from './contexts/ThemeContext';
 
 function App() {
   return (
-    <div className="main-app">
       <ThemeContextProvider>
+    <div className="main-app">
         <MovieContextProvider>
           <Navbar />
           <MovieList />
           <NewMovieForm />
         </MovieContextProvider>
        < ThemeSelect />
-      </ThemeContextProvider>
     </div>
+      </ThemeContextProvider>
   );
 }
 

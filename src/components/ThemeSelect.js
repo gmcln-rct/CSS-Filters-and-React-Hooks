@@ -3,7 +3,7 @@ import React, { useContext, useState } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 
 const ThemeSelect = () => {
-  const {   blur, grayscale, chooseTheme } = useContext(ThemeContext);
+  const {   chooseTheme } = useContext(ThemeContext);
 
   const [filterTheme] = useState('');
 
@@ -18,19 +18,26 @@ const ThemeSelect = () => {
 
 
     return (
-      <form onSubmit={handleSubmit}>
-        <label>
-          Pick your favorite flavor:
-          <select value={filterTheme} onChange={handleChange}>
-              <option value="none">No Filter</option>
-              <option value="blur(10px)">Blur</option>
-              <option value="grayscale(100%)">GrayScale</option>
-            <option value="sepia(1))">Sepia</option>
-              <option value="grayscale(100%)">GrayScale</option>
-          </select>
-        </label>
-        <input type="submit" value="Choose Filter" />
-      </form>
+      <div className="theme-form">
+        <form onSubmit={handleSubmit}>
+          <label>
+            Pick your favorite flavor:
+            <select value={filterTheme} onChange={handleChange}>
+                <option>Choose Filter</option>
+                <option value="blur(10px)">Blur</option>
+                <option value="brightness(3)">Brightness</option>
+              <option value="contrast(3)">Contrast</option>
+
+                <option value="grayscale(100%)">GrayScale</option>
+                <option value="invert(100%)">Invert</option>
+                <option value="sepia(100%)">Sepia</option>
+                <option value="saturate(0%)">Saturate/Desaturate</option>
+              <option value="none">Clear Filter</option>
+            </select>
+          </label>
+          <input type="submit" value="Choose Filter" />
+        </form>
+      </div>
     );
   };
 
