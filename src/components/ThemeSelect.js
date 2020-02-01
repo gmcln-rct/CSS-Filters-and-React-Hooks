@@ -10,8 +10,8 @@ const ThemeSelect = () => {
 
   function handleChange(e) {
     chooseTheme(e.target.value);
-    const { options, value } = e.target;
-    console.log(options[value].innerHTML);
+    const { option, value, label } = e.target;
+
   };
 
   function handleSubmit(e) {
@@ -23,11 +23,12 @@ const ThemeSelect = () => {
       <div className="theme-form">
         <form onSubmit={handleSubmit}>
           <h1>CSS Filters</h1>
-          <label>
+          <h2>
             Choose from dropdown to explore how different CSS filters affect
             page elements.
-          </label>
-          <select value={filterTheme} onChange={handleChange}>
+          </h2>
+          <br />
+          <select className="select-css" value={filterTheme} onChange={handleChange}>
             <option value="none">Choose Filter</option>
             <option value="blur(10px)">Blur</option>
             <option value="brightness(3)">Brightness</option>
