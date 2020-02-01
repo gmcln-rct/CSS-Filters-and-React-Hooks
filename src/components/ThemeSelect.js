@@ -26,7 +26,9 @@ const ThemeSelect = () => {
                 <option>Choose Filter</option>
                 <option value="blur(10px)">Blur</option>
                 <option value="brightness(3)">Brightness</option>
-              <option value="contrast(3)">Contrast</option>
+                <option value="contrast(3)">Contrast</option>
+                <option value="drop-shadow(16px 16px 10px rgba(0,0,0,0.9)">Drop Shadow</option>
+
 
                 <option value="grayscale(100%)">GrayScale</option>
                 <option value="invert(100%)">Invert</option>

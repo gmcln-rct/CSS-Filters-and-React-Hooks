@@ -21,11 +21,16 @@ body {
   width: 100%;
   margin: 0 auto;
 
-  background-color: red;
   
   font-family: 'Heebo', sans-serif;
   
   color: #5c6a7d;
+  background-color: darkblue;
+  background: url(./images/projector-bg2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .themed-app {
