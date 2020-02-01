@@ -21,8 +21,8 @@ const ThemeSelect = () => {
       <div className="theme-form">
         <form onSubmit={handleSubmit}>
           <h1>CSS Filters</h1>
+          <h2>Explore how different filters affect the page.</h2>
           <label>
-            Pick your favorite flavor:
             <select value={filterTheme} onChange={handleChange}>
                 <option>Choose Filter</option>
                 <option value="blur(10px)">Blur</option>
@@ -38,7 +38,7 @@ const ThemeSelect = () => {
               <option value="none">Clear Filter</option>
             </select>
           </label>
-          <input type="submit" value="Choose Filter" />
+          {/* <input type="submit" value="Choose Filter" /> */}
         </form>
       </div>
     );
