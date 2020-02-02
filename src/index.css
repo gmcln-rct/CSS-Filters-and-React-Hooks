@@ -185,9 +185,9 @@ input[type='submit']:hover {
 }
 
 .theme-form form {
-  width: 100%;
-  margin: 1rem 0;
-  background: #9E2116;
+    width: 100%;
+    margin: 1rem 0;
+    background: #9E2116;
 }
 
 .theme-form h1 {
@@ -195,8 +195,8 @@ input[type='submit']:hover {
 }
 
 .theme-form h2 {
-  font-weight: 400;
-  
+    font-weight: 400;
+    text-align: center;
 }
 
 
@@ -212,7 +212,6 @@ input[type='submit']:hover {
   padding: .6em 1.4em .5em .8em;
   border: 1px solid #aaa;
   
-
 	font-size: 1rem;
 	font-family: sans-serif;
 	font-weight: 700;

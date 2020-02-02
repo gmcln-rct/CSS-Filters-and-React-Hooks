@@ -1,22 +1,25 @@
 import React, { useContext, useState } from "react";
 
 import { ThemeContext } from "../contexts/ThemeContext";
-  let themeName;
+  
+
 const ThemeSelect = () => {
-  const {  chooseTheme } = useContext(ThemeContext);
+  const { chooseTheme } = useContext(ThemeContext);
 
   const [filterTheme] = useState('');
-
+  let themeName = filterTheme;
 
   function handleChange(e) {
     chooseTheme(e.target.value);
-    const { option, value, label } = e.target;
-
+    let idx = e.target.selectedIndex;
+    themeName = e.target.options[idx].innerText;
+    console.log(themeName);
   };
 
   function handleSubmit(e) {
     e.preventDefault();
   };
+
 
 
     return (
@@ -28,8 +31,12 @@ const ThemeSelect = () => {
             page elements.
           </h2>
           <br />
-          <select className="select-css" value={filterTheme} onChange={handleChange}>
-            <option value="none">Choose Filter</option>
+          <select
+            className="select-css"
+            value={filterTheme}
+            onChange={handleChange}
+          >
+            <option value="bob">Choose Filter</option>
             <option value="blur(10px)">Blur</option>
             <option value="brightness(3)">Brightness</option>
             <option value="contrast(3)">Contrast</option>
@@ -42,7 +49,7 @@ const ThemeSelect = () => {
             <option value="saturate(0%)">Saturate/Desaturate</option>
             <option value="none">Clear Filter</option>
           </select>
-            <div>Current Filter: {filterTheme}</div>
+            <div>Current Filter: {themeName} </div>
           {/* <input type="submit" value="Choose Filter" /> */}
         </form>
       </div>
