@@ -20,27 +20,33 @@ const NewMovieForm = () => {
     };
 
   return (
-    <form className='movie-form' onSubmit={handleSubmit} style={{ filter: filterTheme }}>
-      <input
-        type="text"
-        placeholder="Movie Title"
-        value={title}
-        onChange={e => setTitle(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Director Name"
-        value={director}
-        onChange={e => setDirector(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Year"
-        value={year}
-        onChange={e => setYear(e.target.value)}
-      />
-      <input type="submit" value="Add movie" />
-    </form>
+    <div className='movie-form-container'>
+
+      <form className='movie-form' onSubmit={handleSubmit} style={{ filter: filterTheme }}>
+        <input
+          type="text"
+          placeholder="Movie Title"
+          value={title}
+          onChange={e => setTitle(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Director Name"
+          value={director}
+          onChange={e => setDirector(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Year"
+          value={year}
+          onChange={e => setYear(e.target.value)}
+        />
+        <input type="submit" value="Add movie" />
+
+      </form>
+
+        <div className='filter-theme'>Current Filter: {filterTheme}</div>
+    </div>
   );
 };
 

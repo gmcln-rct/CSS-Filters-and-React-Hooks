@@ -14,6 +14,9 @@ const ThemeSelect = () => {
     let idx = e.target.selectedIndex;
     themeName = e.target.options[idx].innerText;
     console.log(themeName);
+    return (
+      <div>Dogs and cats</div>
+    )
   };
 
   function handleSubmit(e) {
@@ -25,10 +28,11 @@ const ThemeSelect = () => {
     return (
       <div className="theme-form">
         <form onSubmit={handleSubmit}>
+          {themeName}
           <h1>CSS Filters</h1>
           <h2>
             Choose from dropdown to explore how different CSS filters affect
-            page elements.
+            page elements above.
           </h2>
           <br />
           <select
@@ -45,12 +49,12 @@ const ThemeSelect = () => {
             </option>
             <option value="grayscale(100%)">GrayScale</option>
             <option value="invert(100%)">Invert</option>
+            <option value="opacity(20%)">Opacity</option>
             <option value="sepia(100%)">Sepia</option>
             <option value="saturate(0%)">Saturate/Desaturate</option>
             <option value="none">Clear Filter</option>
           </select>
-            <div>Current Filter: {themeName} </div>
-          {/* <input type="submit" value="Choose Filter" /> */}
+
         </form>
       </div>
     );

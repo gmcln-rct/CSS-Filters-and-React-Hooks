@@ -248,3 +248,17 @@ input[type='submit']:hover {
 .select-css option {
 	font-weight:normal;
 }
+
+.filter-theme {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.4rem 0;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  color: #064792;
+  background: lightgray;
+
+}
