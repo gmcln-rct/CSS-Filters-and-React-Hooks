@@ -261,4 +261,8 @@ input[type='submit']:hover {
   color: #064792;
   background: lightgray;
 
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+
+
 }
