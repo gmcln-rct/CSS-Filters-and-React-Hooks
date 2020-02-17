@@ -7,7 +7,7 @@ const Navbar = () => {
   const { filterTheme } = useContext(ThemeContext);
   return (
     <div className="navbar" style={{ filter: filterTheme }}>
-      <h1>Movie Watchlist</h1>
+      <h1>Sample list</h1>
     </div>
   );
 }

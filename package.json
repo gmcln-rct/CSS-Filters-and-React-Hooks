@@ -1,8 +1,8 @@
 {
   "name": "Movielist",
   "version": "0.1.0",
-  "homepage": "http://riocreate.com",
-  "private": false,
+  "homepage": "http://riocreate.com/explore-hooks/",
+  "private": true,
   "dependencies": {
     "node-sass": "^4.13.1",
     "react": "^16.8.6",
