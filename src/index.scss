@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
 
+// Variables
+$bg-red: #9E2116;
+$bg-dark-blue: #064792;
+$medium-blue: #0d7eff;
+$pale-yellow: #ffecb3;
+$border-gray: #888;
+$dark-gray: #777;
+$bg-dark-gray: #2b313a;
+
 body {
   width: 100vw;
   height: 100vh;
@@ -11,7 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #9E2116;
+  background: $bg-red;
 }
 
 #root {
@@ -38,11 +47,11 @@ body {
   text-align: center;
 
   color: white;
-  background: #064792;
+  background: $bg-dark-blue;
 
   h1{
     margin-bottom: 0;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   p{
     margin-top: 0;
@@ -64,52 +73,50 @@ body {
   width: 80%;
   margin: 0 10% 1%;
   
-ul{
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  list-style-type: none;
+  ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+    li{
+      width: 15rem;
+      margin: 1rem ;
+      padding: 1rem;
+
+      color: #fff;
+      background: $medium-blue;
+      border-radius: 10px;
+
+      cursor: pointer;
+    }
+    li:hover{
+      opacity: 0.7;
+      background: #66647c;
+      text-decoration: line-through;
+      transition: 0.4s;
+    }
+
+    .title{
+      font-weight: 400;
+      font-size: 1.2em;
+    }
+    .year{
+      font-size: 0.9em;
+      color: #ddd;
+    }
+    .director{
+      font-size: 0.9em;
+      color: #ddd;
+    } 
+  .movie-title {
+    font-weight: 700;
+    color: $pale-yellow;
+  }
 }
-  li{
-    width: 15rem;
-    margin: 1rem ;
-    padding: 1rem;
-
-    color: #fff;
-    background: #0d7eff;
-    border-radius: 10px;
-
-    cursor: pointer;
-  }
-  li:hover{
-    opacity: 0.7;
-    background: #66647c;
-    text-decoration: line-through;
-    transition: 0.4s;
-  }
-
-  .title{
-    font-weight: 400;
-    font-size: 1.2em;
-  }
-  .year{
-    font-size: 0.9em;
-    color: #ddd;
-  }
-  .director{
-    font-size: 0.9em;
-    color: #ddd;
-  }
-
-}
 
 
-
-.movie-title {
-  font-weight: 700;
-  color: rgb(232, 255, 102);
-}
 
 .movie-list > ul > li:hover {
   color: #e2d0b6;
@@ -121,70 +128,87 @@ ul{
   text-align: center;
 }
 
-/* Movie Form */
+// -------------- Movie Form -----------------
+
 form.movie-form {
-    width: 40%;
-    max-width: 400px;
-    margin-bottom: 2rem;
+    width: 20vw;
+    min-width: 300px;
+    margin-bottom: 4vmin;
     font-size: 0.8rem;
     background: #999;
     border-radius: 10px;
+    font-family: 'Heebo', sans-serif;
 }
 
 form {
   margin: 0 auto;
   padding: 0.5rem 1rem;
 
-  font-family: 'Heebo', sans-serif;
-}
 
-input {
-    color: #fff;
-    background: #2b313a;
-    border: 0;
-}
-
-input[type='text']{
+  input[type='text']{
     width: 100%;
-    padding: 5px;
+    padding: 0.3rem;
     box-sizing: border-box;
     margin: 6px 0;
-
-    border: 0;
-}
-input[type='submit']{
-    display: block;
-    margin: 0.5rem auto;
-    padding: 6px 20px;
-
-    font-weight: 600;
-
-    border-radius: 5px;
     color: #fff;
-    background: #1F78DE;
+    font-weight: 600;
+    background: $bg-dark-gray;
+    border: 0;
+  }
+  input[type='submit']{
+      display: block;
+      margin: 0.3rem auto;
+      padding: 6px 20px;
+
+      font-weight: 600;
+      border: 1px solid white;
+      border-radius: 5px;
+      color: #fff;
+      background: $medium-blue;
+
+      &:hover {
+        color: $medium-blue;
+        background: lightgrey;
+        border-color: $medium-blue;
+        transition: 0.4s;
+      }
+  }
+
 }
 
-input[type='submit']:hover {
-  color: #1F78DE;
-  background: lightgrey;
-  transition: 0.4s;
-}
 
-/* Theme Form */
+.filter-theme {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.4rem 0;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  color: $pale-yellow;
+  background: $bg-dark-gray;
+
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+
+}
+// -------------- CSS Theme Form -----------------
+
 .theme-form {
     display: flex;
     justify-content: center;
     align-items: center;
 
     color: white;
-    background-color: #9E2116;
+    background-color: $bg-red;
 
     z-index: 5;
 
   form {
       width: 100%;
       margin: 1rem 0;
-      background: #9E2116;
+      background: $bg-red;
   }
 
   h1 {
@@ -197,7 +221,6 @@ input[type='submit']:hover {
   }
 
 }
-
 
 /* Select Tag */
 .select-css {
@@ -226,38 +249,27 @@ input[type='submit']:hover {
 	  linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
 	background-repeat: no-repeat, repeat;
 	background-position: right .7em top 50%, 0 0;
-	background-size: .65em auto, 100%;
+  background-size: .65em auto, 100%;
+  
+  &:hover {
+    border-color: $border-gray;
+  }
+
+    &:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px $bg-dark-blue;
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+  
 }
-.select-css::-ms-expand {
-	display: none;
-}
-.select-css:hover {
-	border-color: #888;
-}
-.select-css:focus {
-	border-color: #aaa;
-	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-	box-shadow: 0 0 0 3px -moz-mac-focusring;
-	color: #222;
-	outline: none;
-}
+
 .select-css option {
 	font-weight:normal;
 }
 
-.filter-theme {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 0.4rem 0;
-
-  font-size: 1.4rem;
-  font-weight: 600;
-
-  color: #064792;
-  background: lightgray;
-
-  border-top: 1px solid darkgray;
-  border-bottom: 1px solid darkgray;
-
-}
