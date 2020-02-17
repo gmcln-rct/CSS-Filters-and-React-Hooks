@@ -1,7 +1,8 @@
 {
-  "name": "movielist",
+  "name": "Movielist",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "http://riocreate.com",
+  "private": false,
   "dependencies": {
     "node-sass": "^4.13.1",
     "react": "^16.8.6",
