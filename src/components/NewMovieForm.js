@@ -44,8 +44,6 @@ const NewMovieForm = () => {
         <input type="submit" value="Add movie" />
 
       </form>
-
-        <div className='filter-theme'>Current Filter: {filterTheme}</div>
     </div>
   );
 };

@@ -186,12 +186,17 @@ form {
   font-size: 1.4rem;
   font-weight: 600;
 
-  color: $pale-yellow;
+  color: white;
   background: $bg-dark-gray;
 
   border-top: 1px solid darkgray;
   border-bottom: 1px solid darkgray;
 
+}
+
+.filter-name {
+  margin-left: 0.5rem;
+  color: $pale-yellow;
 }
 // -------------- CSS Theme Form -----------------
 
