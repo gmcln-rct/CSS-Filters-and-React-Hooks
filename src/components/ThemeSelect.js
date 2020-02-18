@@ -23,8 +23,6 @@ const ThemeSelect = () => {
     e.preventDefault();
   };
 
-
-
     return (
       <div className="theme-form">
         <form onSubmit={handleSubmit}>
