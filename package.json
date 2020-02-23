@@ -1,8 +1,8 @@
 {
   "name": "Movielist",
   "version": "0.1.0",
-  "homepage": "http://gmcln-rct.github.io/explore-hooks",
   "private": true,
+  "homepage": "https://gmcln-rct.github.io/explore-hooks",
   "dependencies": {
     "node-sass": "^4.13.1",
     "react": "^16.8.6",
