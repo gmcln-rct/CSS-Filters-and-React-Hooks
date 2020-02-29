@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/explore-hooks/static/css/main.6665b4e9.chunk.css",
-    "main.js": "/explore-hooks/static/js/main.bba2b5aa.chunk.js",
-    "main.js.map": "/explore-hooks/static/js/main.bba2b5aa.chunk.js.map",
-    "runtime-main.js": "/explore-hooks/static/js/runtime-main.28196df2.js",
-    "runtime-main.js.map": "/explore-hooks/static/js/runtime-main.28196df2.js.map",
-    "static/js/2.f79de6ab.chunk.js": "/explore-hooks/static/js/2.f79de6ab.chunk.js",
-    "static/js/2.f79de6ab.chunk.js.map": "/explore-hooks/static/js/2.f79de6ab.chunk.js.map",
-    "index.html": "/explore-hooks/index.html",
-    "precache-manifest.c8c200000bc22e521527a4d65894b282.js": "/explore-hooks/precache-manifest.c8c200000bc22e521527a4d65894b282.js",
-    "service-worker.js": "/explore-hooks/service-worker.js",
-    "static/css/main.6665b4e9.chunk.css.map": "/explore-hooks/static/css/main.6665b4e9.chunk.css.map",
-    "static/js/2.f79de6ab.chunk.js.LICENSE": "/explore-hooks/static/js/2.f79de6ab.chunk.js.LICENSE"
+    "main.css": "/CSS-Filters-and-React-Hooks/static/css/main.6665b4e9.chunk.css",
+    "main.js": "/CSS-Filters-and-React-Hooks/static/js/main.154a6ba8.chunk.js",
+    "main.js.map": "/CSS-Filters-and-React-Hooks/static/js/main.154a6ba8.chunk.js.map",
+    "runtime-main.js": "/CSS-Filters-and-React-Hooks/static/js/runtime-main.29f26f50.js",
+    "runtime-main.js.map": "/CSS-Filters-and-React-Hooks/static/js/runtime-main.29f26f50.js.map",
+    "static/js/2.f79de6ab.chunk.js": "/CSS-Filters-and-React-Hooks/static/js/2.f79de6ab.chunk.js",
+    "static/js/2.f79de6ab.chunk.js.map": "/CSS-Filters-and-React-Hooks/static/js/2.f79de6ab.chunk.js.map",
+    "index.html": "/CSS-Filters-and-React-Hooks/index.html",
+    "precache-manifest.53d204e651693d8e822983a6906d8e4c.js": "/CSS-Filters-and-React-Hooks/precache-manifest.53d204e651693d8e822983a6906d8e4c.js",
+    "service-worker.js": "/CSS-Filters-and-React-Hooks/service-worker.js",
+    "static/css/main.6665b4e9.chunk.css.map": "/CSS-Filters-and-React-Hooks/static/css/main.6665b4e9.chunk.css.map",
+    "static/js/2.f79de6ab.chunk.js.LICENSE": "/CSS-Filters-and-React-Hooks/static/js/2.f79de6ab.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.28196df2.js",
+    "static/js/runtime-main.29f26f50.js",
     "static/js/2.f79de6ab.chunk.js",
     "static/css/main.6665b4e9.chunk.css",
-    "static/js/main.bba2b5aa.chunk.js"
+    "static/js/main.154a6ba8.chunk.js"
   ]
 }
