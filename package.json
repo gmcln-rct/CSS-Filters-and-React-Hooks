@@ -1,8 +1,8 @@
 {
-  "name": "Movielist",
+  "name": "CSS Filters with Reach Hooks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gmcln-rct.github.io/CSS-Filters-and-React-Hooks",
+  "homepage": "https://www.knowcssfilters.net",
   "dependencies": {
     "node-sass": "^4.13.1",
     "react": "^16.8.6",
