@@ -6,7 +6,7 @@ This is a dual-layered site using Reach Context & Hooks. On top of a basic watch
 http://www.knowcssfilters.net/
 
 
-#Installation
+# Installation
 
 * Download repo
 * Run npm install
